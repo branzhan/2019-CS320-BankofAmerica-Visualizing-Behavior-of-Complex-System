@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <img src="../img/boalogo.png">
+<div class="topnav">
+  <a class="active" href="#dashboard">Dashboard</a>
+  <a href="forcediagram.html">Force Diagram</a>
+  <a href="chorddiagram.html">Chord Diagram</a>
+  <a href="about.html">About</a>
+</div>
+<p>Current Active Nodes: 3194</p>
+<p>Current Inactive Nodes: 21</p>
+<div style="padding-left:16px">
+</div>
+
+<style>
+		.meter {
+			height: 10px;  /* Can be anything */
+			position: static;
+			margin: 5px 0 10px 0; /* Just for demo spacing */
+			background: white;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			padding: 5px;
+			-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+			-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+			box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+		}
+		.meter > span {
+			display: block;
+			height: 100%;
+			   -webkit-border-top-right-radius: 4px;
+			-webkit-border-bottom-right-radius: 4px;
+			       -moz-border-radius-topright: 4px;
+			    -moz-border-radius-bottomright: 4px;
+			           border-top-right-radius: 4px;
+			        border-bottom-right-radius: 4px;
+			    -webkit-border-top-left-radius: 10px;
+			 -webkit-border-bottom-left-radius: 10px;
+			        -moz-border-radius-topleft: 10px;
+			     -moz-border-radius-bottomleft: 10px;
+			            border-top-left-radius: 10px;
+			         border-bottom-left-radius: 10px;
+			background-color: rgb(43,194,83);
+			background-image: -moz-linear-gradient(
+			  center bottom,
+			  rgb(43,194,83) 37%,
+			  rgb(84,240,84) 69%
+			 );
+			-webkit-box-shadow:
+			  inset 0 2px 9px  rgba(255,255,255,0.3),
+			  inset 0 -2px 6px rgba(0,0,0,0.4);
+			-moz-box-shadow:
+			  inset 0 2px 9px  rgba(255,255,255,0.3),
+			  inset 0 -2px 6px rgba(0,0,0,0.4);
+			box-shadow:
+			  inset 0 2px 9px  rgba(255,255,255,0.3),
+			  inset 0 -2px 6px rgba(0,0,0,0.4);
+			position: static;
+			overflow: hidden;
+		}
+	
+		
+	</style>
+<div class="meter">
+	<span style="width: 80%"></span>
+</div>
+</body>
+</html>

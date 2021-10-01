@@ -1,0 +1,14 @@
+{
+  "name": "@stephenszc/clickable-force-directed-graph-network-graph",
+  "main": "Triage.js",
+  "version": "276.0.0",
+  "homepage": "https://observablehq.com/@stephenszc/clickable-force-directed-graph-network-graph",
+  "author": {
+    "name": "stephenszc",
+    "url": "https://observablehq.com/@stephenszc"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

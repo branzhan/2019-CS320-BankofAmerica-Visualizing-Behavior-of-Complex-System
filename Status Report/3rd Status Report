@@ -1,0 +1,23 @@
+Date: 9/19/19
+1)        Project Members:
+  ●       Saurav Chatterjee
+  ●       Brian Zhang
+  ●       Zachary Stephens
+ 
+2)        Accomplishments for the week -- and which team members participated/contributed
+  ●        Still researching about a node model and visualization tools such as neo4j- Saurav Chatterjee
+  ●        Researched Pythonic models of data visualization including Tkinter. Worked out some fine tuning of the data model. See Capsule Model on GitHub for documentation. - Zachary Stephens
+  ●        Had some ideas about what visually it might look like but Zach had a direction I really thought was good in terms of visualization  – Brian Zhang
+  	
+ 
+3)      List of Milestones to be completed and anticipated date (indicate which ones are in danger of not being met)
+  ●      Learn how to use neo4j and try to come up with a base example - Saurav Chatterjee - 9/19/19
+  ●      Develop a plan to generate testable data. Write scripts capable of generating data within a given value range in a database friendly format - Zachary Stephens - 9/19/19
+  ●      Actually create a database with some dummy data to help represent our current models – Brian Zhang – 9/19/19
+ 
+4)        List of issues, problems, or concern(s)
+  ●       Concern – Figuring out all the KPI measurables for the different sectors in the infrastructure. Saurav is accountable.
+  ●       Concern - determining the potential need to communicate through a database. If necessary, we may have to shift the schedule to accommodate setting up the database. Zachary is accountable.
+  ●       Concern – Going beyond just creating these data sets, being able to create the visualization of it seems much more difficult. Brian is accountable.
+  ●       Concern - Neo4J works on a foundation of Javascript, a language we aren't familiar with. The database requirements may need a NOSQL database, another language we aren’t familiar with. A popular toolkit for Neo4J that may serve our needs (KeyLines), none of us have ever heard of it and it takes Javascript and NOSQL. Point is, we’ll spend most of our design phase learning the languages, and we’ll have to budget accordingly to meet deadlines. We are all accountable.
+

@@ -1,0 +1,42 @@
+The Capsule Model:
+
+Summary:
+  The Capsule model involves a set of nodemaps which encapsulate related branches of nodes. 
+  In our model, each capsule is represented by a business.
+  Each business is interfaced by Applications (front-ends) and Infrastructures (back-ends).
+  Each Application offers Services which are run by Processes. 
+  These I/A/S/P nodes are all treated as equal within the scope of this model but they each have weights relative to their effects on other nodes.
+
+Weights:
+  Weights along a nodepath are represented by KPIs.
+  Some discussed KPIs include cost of maintenance, profit margin, failure impact, etc.
+  
+  For something like cost, the weight of the P is a subset of the weight of S, and likewise S and I are subsets of the weight of A. 
+  The overall weight of a business is more or less equivalent to the sum of weights across all their application nodes.
+  
+  For something like profit margin, each component which actively generates value will be weighted as the sum of their profit minus their cost of operation.
+  Overall, the sum of profits across the applications represents the sum of the profits for the business.
+  
+  For something like failure impact, the weight represents the portion of the node that would be impacted if another node experienced a failure.
+  In the case that the base node has a 100% impact, we see that a failure in the base will cause complete failure in any node which requires it. 
+  
+  In the example drawing in this repository, the Loan Evaluation Process has a 100% impact of failure on the Loans Service.
+  The Loans service then experiences a failure, which has only a 20% impact on the functionality of each of the Applications above it.
+  That said, the Applications can still function without that Service, but that Service cannot function without that process. 
+  
+Pros of this model:
+  -Unlike the Stack Model, the Capsule Model allows multiple directions of pathing. 
+  -Unlike the Unary Weighted Node Map Model, the Capsule Model will not allow propogation beyond the scope of the Business.
+  -The Capsule model removes the Business from the node map, which is more representative of nature of the system.
+  -The Capsule model allows for more distinct movement between large branches of the system (namely, across businesses)
+  -The Capsule model still allows I/S/P to be shared across multiple Capsules as needed.
+  -This system can function with weights but does not require them.
+  -The system could generate a real-time model or a static model.
+Cons of this model:
+  -If seeking to view the connections of a I/S/P shared across multiple capsules, there is no unified way to view this system.
+    -You would need to view the node in multiple views across two or more capsules. 
+  -Businesses may be too large for this model to be practical for visualization
+    -Too many nodes in a single view may demand a more narrow capsule
+  -Visualization software may be challenging to find which applies to this model
+    -Exploration of this avenue has not yet been atttempted
+  

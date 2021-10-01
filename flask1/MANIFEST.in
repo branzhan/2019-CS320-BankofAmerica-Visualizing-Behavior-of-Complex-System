@@ -1,0 +1,4 @@
+include bankapp/schema.sql
+graft bankapp/static
+graft bankapp/templates
+global-exclude *.pyc

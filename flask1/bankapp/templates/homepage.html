@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="https://bootswatch.com/3/paper/bootstrap.css" media="screen">
+  <link rel='stylesheet' href='/static/style.css' type='text/css' media='all' />
+</head>
+
+<body>
+<h1>Welcome to the bankapp test page</h1>
+<ul>
+    <li><a href="{{ url_for('hello') }}">Link to static hello world application</a></li>
+    <li><a href="{{ url_for('original_index') }}">Link to static bank app pages</a></li>
+    <li><a href="{{ url_for('titanic.index') }}">Link to sample titanic/D3 example.</a></li>
+    <li><a href="{{ url_for('titanic.get_piechart_data') }}">Link to sample titanic/D3 data used to feed D3</a></li>
+</ul>
+</body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="{{ url_for('static',filename='bar.js') }}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
